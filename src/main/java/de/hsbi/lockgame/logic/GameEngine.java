@@ -20,32 +20,32 @@ import de.hsbi.lockgame.ui.GamePanel;
 // TODO: Die GameEngine ist ein Observable für GameState: GamePanel.update(GameState)
 public final class GameEngine {
 
-  public GameEngine(Level level) {
-    // TODO: lege eine neue GameEngine mit den übergebenen Informationen an
-    throw new UnsupportedOperationException("method not implemented yet");
-  }
+    public GameEngine(Level level) {
+        // TODO: lege eine neue GameEngine mit den übergebenen Informationen an
+        throw new UnsupportedOperationException("method not implemented yet");
+    }
 
-  public GameState state() {
-    // TODO: gebe den aktuellen Spielzustand zurück
-    throw new UnsupportedOperationException("method not implemented yet");
-  }
+    public GameState state() {
+        // TODO: gebe den aktuellen Spielzustand zurück
+        throw new UnsupportedOperationException("method not implemented yet");
+    }
 
-  public void setGamePanel(GamePanel panel) {
-    // TODO: Setter
-    throw new UnsupportedOperationException("method not implemented yet");
-  }
+    public void setGamePanel(GamePanel panel) {
+        // TODO: Setter
+        throw new UnsupportedOperationException("method not implemented yet");
+    }
 
-  public void update(Direction d) {
-    // TODO: aktualisiere den Blickwinkel der Schlange (GameState)
-    // TODO: benachrichtige alle Observer und gibt den neuen Spielzustand mit (Neuzeichnen der
-    // Spielfläche)
-    throw new UnsupportedOperationException("method not implemented yet");
-  }
+    public void update(Direction d) {
+        // TODO: aktualisiere den Blickwinkel der Schlange (GameState)
+        // TODO: benachrichtige alle Observer und gibt den neuen Spielzustand mit (Neuzeichnen der
+        // Spielfläche)
+        throw new UnsupportedOperationException("method not implemented yet");
+    }
 
-  public void tick() {
-    // TODO: lass das Spiel (den GameState) einen Schritt ("tick") machen
-    // TODO: benachrichtige alle Observer und gibt den neuen Spielzustand mit (Neuzeichnen der
-    // Spielfläche)
-    throw new UnsupportedOperationException("method not implemented yet");
-  }
+    public void tick() {
+        // TODO: lass das Spiel (den GameState) einen Schritt ("tick") machen
+        // TODO: benachrichtige alle Observer und gibt den neuen Spielzustand mit (Neuzeichnen der
+        // Spielfläche)
+        throw new UnsupportedOperationException("method not implemented yet");
+    }
 }
