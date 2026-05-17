@@ -1,20 +1,27 @@
 plugins {
     id 'java'
     id 'application'
-    id 'com.diffplug.spotless' version '7.0.2'
+    id 'com.diffplug.spotless' version '7.2.1'
 }
 
-group = 'catcafe'
-version = '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation platform('org.junit:junit-bom:6.0.3')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 application {
-    mainClass = 'catcafe.Main'
+    mainClass = 'de.hsbi.lockgame.Main'
 }
 
 test {
@@ -23,7 +30,8 @@ test {
 
 spotless {
     java {
-        googleJavaFormat('1.27.0').aosp()
+        target 'src/main/java/**/*.java', 'src/test/java/**/*.java'
+        googleJavaFormat('1.28.0')
         formatAnnotations()
     }
 }
